@@ -136,8 +136,10 @@ export class PagingDots extends React.Component {
     return {
       position: 'relative',
       margin: 0,
-      top: -10,
-      padding: 0
+      top: -15,
+      padding: 0,
+      height: 5,
+      overflow: 'hidden'
     };
   }
 
@@ -150,13 +152,12 @@ export class PagingDots extends React.Component {
 
   getButtonStyles(active) {
     return {
-      border: 0,
-      background: 'transparent',
-      color: 'black',
-      cursor: 'pointer',
-      padding: 10,
-      fontSize: 24,
-      opacity: active ? 1 : 0.5
+      opacity: active ? 1 : 0.5,
+      width: '35px',
+      height: '5px',
+      background: active ? 'rgba(240,185,11,1)' : '#fff',
+      border: 'none',
+      margin: '0 5px'
     };
   }
 

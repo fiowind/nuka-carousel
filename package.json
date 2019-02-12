@@ -1,5 +1,5 @@
 {
-  "name": "nuka-carousel",
+  "name": "@bijie/nuka-carousel",
   "version": "4.4.8",
   "description": "Pure React Carousel",
   "main": "index.js",
